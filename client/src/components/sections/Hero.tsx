@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download } from "lucide-react";
 import { motion } from "framer-motion";
-import headshot from "@assets/generated_images/professional_headshot_of_a_male_consultant.png";
+import headshot from "@assets/Screenshot_2024-11-18_at_11.17.33_AM_1764716108785.png";
 import background from "@assets/generated_images/abstract_corporate_blue_geometric_background.png";
 
 export default function Hero() {
