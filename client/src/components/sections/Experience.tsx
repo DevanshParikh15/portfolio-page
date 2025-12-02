@@ -19,6 +19,36 @@ const experiences = [
     role: "System Engineer",
     period: "2022–2024",
     description: "Helped major energy clients adopt D365 Field Service & Customer Service. Implemented Salesforce Service Cloud & Field Service Lightning. Improved user adoption and streamlined global workflows."
+  },
+  {
+    company: "Microsoft",
+    role: "Future Ready Talent Intern",
+    period: "2021–2022",
+    description: "Explored cloud technologies and applied Microsoft tools to solve business challenges. Gained exposure to Azure fundamentals, Power Platform basics, and enterprise digital transformation scenarios."
+  },
+  {
+    company: "CodeSpeedy",
+    role: "Machine Learning Engineer",
+    period: "2021",
+    description: "Built machine learning models using Python, applying data preprocessing, feature engineering, and predictive analytics. Created articles and tutorials for the company’s platform, demonstrating technical topics in a simple, educational format."
+  },
+  {
+    company: "CodeSpeedy",
+    role: "Python Programmer",
+    period: "2021",
+    description: "Developed Python-based automation and computer vision projects, including text-to-speech and text detection tools. Published multiple projects for public use, showcasing strong problem-solving and creativity."
+  },
+  {
+    company: "Hewlett Packard Enterprise",
+    role: "Summer Trainee",
+    period: "2020",
+    description: "Completed a project-based internship focused on Python, machine learning, and data analysis. Built an end-to-end ML model for healthcare data, improving classification accuracy and supporting data-driven insights."
+  },
+  {
+    company: "ASME",
+    role: "Student Member",
+    period: "2017–2018",
+    description: "Participated in technical events, workshops, and outreach activities related to engineering and innovation. Contributed to student-led initiatives supporting technology awareness and academic collaboration."
   }
 ];
 
