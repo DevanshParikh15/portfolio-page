@@ -1,0 +1,139 @@
+Build a modern, clean, single-page personal portfolio website for Devansh Parikh, designed to impress recruiters and hiring managers in Microsoft Dynamics 365 CRM & ERP consulting.
+
+Overall Style
+
+Corporate, minimal, Microsoft-like design (clean edges, blue/violet accents, subtle gradients).
+
+Professional but modern look.
+
+Fully responsive.
+
+Use elegant typography similar to Microsoft’s Fluent UI.
+
+Website Structure
+
+The site should contain the following sections in a smooth-scroll single page:
+
+1. Hero Section
+
+Display name: Devansh Parikh
+
+Title: CRM & ERP Consultant | Microsoft Dynamics 365 Specialist
+
+Short line: Helping businesses adopt modern CRM & ERP systems through Microsoft Dynamics 365 and Salesforce.
+
+Add a professional headshot placeholder and a clean call-to-action button: Download Resume (placeholder link).
+
+Background: gradient with subtle tech shapes or geometric lines.
+
+2. About Me
+
+Short impactful paragraph:
+Devansh specializes in Microsoft Dynamics 365—particularly Customer Service, Field Service, and Business Central. He helps organizations modernize operations, improve service delivery, and streamline end-to-end processes. With experience across enterprise consulting, AI product development, and CRM implementation, he brings a blend of technical, functional, and business strategy skills.
+
+3. Certifications Section
+
+Create clean certification cards with small logos:
+
+Microsoft Certified: Business Central Functional Consultant
+
+Microsoft Certified: Business Central Developer
+
+Microsoft Certified: Customer Service Functional Consultant
+
+Microsoft Certified: Field Service Functional Consultant
+
+Salesforce Certified Administrator
+
+Salesforce Certified Agentforce Specialist
+
+SAFe Certified Product Manager
+
+4. Skills Section
+
+Highlight skills using icon blocks or pill-badges:
+
+Dynamics 365: Customer Service, Field Service, Business Central
+Salesforce: Service Cloud, Field Service Lightning
+Business Roles: Product Owner, Business Analyst
+Tech Skills: CRM Configuration, Automation, Workflows, API Integrations
+Soft Skills: Requirements Gathering, Stakeholder Management, Agile Delivery
+
+5. Experience Timeline
+
+Use a modern vertical or horizontal timeline:
+
+Infosys — System Engineer (2022–2024)
+
+Helped major energy clients adopt D365 Field Service & Customer Service
+
+Implemented Salesforce Service Cloud & Field Service Lightning
+
+Improved user adoption and streamlined global workflows
+
+Vosyn — AI Product Owner & Business Analyst (2024–2025)
+
+Guided founders on integrating their AI tech into business applications
+
+Led product development from concept to beta
+
+Prioritized user stories, managed backlog, and aligned functional requirements
+
+BreezeLearn Technologies — Market Research Analyst (2025)
+
+Researched CRM & business applications for improving SDR operations
+
+Identified use cases for lead generation, targeting, and client acquisition
+
+6. Projects Section (Add 3 cards)
+
+Project 1: D365 Field Service Optimization
+Short description: Improved scheduling, resource allocation, and service workflows.
+
+Project 2: AI-enhanced CRM Prototype (Vosyn)
+Short description: Helped define use cases for CRM + AI integration.
+
+Project 3: SDR CRM Automation Research (BreezeLearn)
+Short description: Identified where business apps can improve SDR conversion.
+
+7. Contact Section
+
+Simple form:
+
+Name
+
+Email
+
+Message
+
+With a clear call:
+Let’s connect to explore opportunities in Dynamics 365 consulting.
+
+Also add LinkedIn button linking to:
+https://www.linkedin.com/in/devansh-parikh-975a5a175
+
+Technical Requirements
+
+Build using HTML, CSS, and JavaScript.
+
+Smooth scrolling.
+
+Responsive layout (mobile, tablet, desktop).
+
+Fluent UI-inspired components.
+
+Host-ready file structure: index.html, style.css, script.js.
+
+Extra Polish
+
+Add small animations: fade-in, slide-up transitions.
+
+Make certification cards clickable.
+
+Add hover effects to skill badges.
+
+Add a soft glowing highlight around Dynamics-focused sections.
+
+Goal
+
+Create a clean, impressive, Microsoft-style portfolio site that shows Devansh as a strong candidate for Dynamics 365 consulting, CRM functional roles, or technical analyst roles.
