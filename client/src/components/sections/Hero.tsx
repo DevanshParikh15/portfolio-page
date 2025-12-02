@@ -63,7 +63,7 @@ export default function Hero() {
               <img 
                 src={headshot} 
                 alt="Devansh Parikh" 
-                className="w-full h-full object-cover" 
+                className="w-full h-full object-cover object-top" 
               />
             </div>
             
