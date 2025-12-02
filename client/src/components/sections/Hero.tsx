@@ -41,9 +41,6 @@ export default function Hero() {
             <Button size="lg" className="rounded-full px-8 py-6 text-lg shadow-xl shadow-primary/20 bg-primary hover:bg-primary/90 transition-transform hover:scale-105">
               Download Resume <Download className="ml-2 w-5 h-5" />
             </Button>
-            <Button size="lg" variant="outline" className="rounded-full px-8 py-6 text-lg border-slate-200 text-slate-700 hover:bg-slate-50 hover:text-primary">
-              View Projects <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
           </div>
         </motion.div>
 
