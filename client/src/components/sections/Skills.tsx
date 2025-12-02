@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 const skillCategories = [
   {
     title: "Dynamics 365",
-    skills: ["Customer Service", "Field Service", "Business Central"],
+    skills: ["Business Central", "Customer Service", "Field Service"],
     color: "bg-blue-50 text-blue-700 border-blue-100"
   },
   {
     title: "Salesforce",
-    skills: ["Service Cloud", "Field Service Lightning"],
+    skills: ["Administration", "Service Cloud", "Field Service Lightning"],
     color: "bg-sky-50 text-sky-700 border-sky-100"
   },
   {
