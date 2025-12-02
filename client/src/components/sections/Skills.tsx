@@ -18,7 +18,7 @@ const skillCategories = [
   },
   {
     title: "Tech Skills",
-    skills: ["CRM Configuration", "Automation", "Workflows", "API Integrations"],
+    skills: ["CRM Configuration", "Automation & Workflow Design", "Power Platform (Power BI, Power Apps, Power Automate)", "Data Integration & Migration"],
     color: "bg-slate-50 text-slate-700 border-slate-200"
   },
   {
