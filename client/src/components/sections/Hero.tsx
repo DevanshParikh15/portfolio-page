@@ -30,7 +30,7 @@ export default function Hero() {
           </div>
           
           <h1 className="text-5xl lg:text-7xl font-bold text-slate-900 leading-tight tracking-tight">
-            Transforming Business with <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-600">Intelligent CRM</span>
+            Transforming Business with <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-600">Intelligent CRM and ERP systems</span>
           </h1>
           
           <p className="text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
