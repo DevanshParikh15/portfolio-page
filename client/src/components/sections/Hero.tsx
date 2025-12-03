@@ -1,7 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Download } from "lucide-react";
 import { motion } from "framer-motion";
-import { RESUME_LINK } from "@/config/resume";
 import headshot from "@assets/Screenshot_2024-11-18_at_11.17.33_AM_1764716108785.png";
 import background from "@assets/generated_images/abstract_corporate_blue_geometric_background.png";
 
@@ -37,14 +34,6 @@ export default function Hero() {
           <p className="text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
             CRM/ERP specialist ready to drive digital transformation. Expertise in Dynamics 365, Salesforce, and end-to-end implementation strategy.
           </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-4">
-            <a href={RESUME_LINK} target="_blank" rel="noreferrer">
-              <Button size="lg" className="rounded-full px-8 py-6 text-lg shadow-xl shadow-primary/20 bg-primary hover:bg-primary/90 transition-transform hover:scale-105">
-                Download Resume <Download className="ml-2 w-5 h-5" />
-              </Button>
-            </a>
-          </div>
         </motion.div>
 
         <motion.div 
