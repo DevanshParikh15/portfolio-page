@@ -6,4 +6,4 @@
 // 3. Get shareable link (anyone with link can view)
 // 4. Replace the URL below with your link
 
-export const RESUME_LINK = "https://drive.google.com/file/d/YOUR_DRIVE_FILE_ID/view?usp=sharing";
+export const RESUME_LINK = "https://drive.google.com/file/d/1XKmbn1mV7-1bRDrThippBFZQ5b7hagb6/view?usp=drive_link";
