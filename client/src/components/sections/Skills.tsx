@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import background from "@assets/generated_images/skills_section_background.jpg";
 
 const skillCategories = [
   {
@@ -17,8 +18,8 @@ const skillCategories = [
     color: "bg-violet-50 text-violet-700 border-violet-100"
   },
   {
-    title: "Tech Skills",
-    skills: ["CRM Configuration", "Automation & Workflow Design", "Power Platform (Power BI, Power Apps, Power Automate)", "Data Integration & Migration"],
+    title: "Power Platform Tools",
+    skills: ["Power Apps", "Power Automate", "Power BI", "Dataverse", "Power Pages", "Power Virtual Agents", "AI Builder", "Connectors (Standard & Premium)", "Solution Management"],
     color: "bg-slate-50 text-slate-700 border-slate-200"
   },
   {
@@ -30,10 +31,19 @@ const skillCategories = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24 bg-slate-50">
-      <div className="container mx-auto px-6">
+    <section id="skills" className="py-24 bg-slate-50 relative overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={background} 
+          alt="Skills Background" 
+          className="w-full h-full object-cover opacity-10" 
+        />
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Skills & Expertise</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Skills & Expertise</h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
             A comprehensive toolkit for delivering enterprise-grade solutions.
           </p>
@@ -49,12 +59,12 @@ export default function Skills() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 p-6 rounded-xl border border-slate-100 hover:border-slate-200 hover:shadow-sm transition-all bg-slate-50/50"
             >
-              <h3 className="min-w-[140px] text-lg font-bold text-slate-900">{category.title}</h3>
+              <h3 className="min-w-[140px] text-xl font-bold text-slate-900">{category.title}</h3>
               <div className="flex flex-wrap gap-3">
                 {category.skills.map((skill) => (
                   <span 
                     key={skill} 
-                    className={`px-4 py-2 rounded-full text-sm font-medium border ${category.color} transition-transform hover:scale-105 cursor-default`}
+                    className={`px-4 py-2 rounded-full text-base font-medium border ${category.color} transition-transform hover:scale-105 cursor-default`}
                   >
                     {skill}
                   </span>

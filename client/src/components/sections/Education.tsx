@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { GraduationCap } from "lucide-react";
+import background from "@assets/generated_images/education.jpg";
 
 const education = [
   {
@@ -26,10 +27,19 @@ const education = [
 
 export default function Education() {
   return (
-    <section id="education" className="py-24 bg-slate-50 overflow-hidden">
-      <div className="container mx-auto px-6">
+    <section id="education" className="py-24 bg-slate-50 overflow-hidden relative">
+      {/* Background */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={background} 
+          alt="Education Background" 
+          className="w-full h-full object-cover opacity-10" 
+        />
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Education</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Education</h2>
         </div>
 
         <div className="max-w-3xl mx-auto relative">
@@ -52,16 +62,16 @@ export default function Education() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row sm:items-baseline justify-between mb-2">
-                  <h3 className="text-xl font-bold text-slate-900">{edu.institution}</h3>
-                  <span className="text-sm font-semibold text-primary bg-blue-50 px-3 py-1 rounded-full border border-blue-100 w-fit mt-2 sm:mt-0">
+                  <h3 className="text-2xl font-bold text-slate-900">{edu.institution}</h3>
+                  <span className="text-base font-semibold text-primary bg-blue-50 px-3 py-1 rounded-full border border-blue-100 w-fit mt-2 sm:mt-0">
                     {edu.period}
                   </span>
                 </div>
-                <h4 className="text-lg text-slate-700 font-medium mb-1 flex items-center gap-2">
+                <h4 className="text-xl text-slate-700 font-medium mb-1 flex items-center gap-2">
                   <GraduationCap className="w-5 h-5 text-slate-400" />
                   {edu.degree}
                 </h4>
-                <p className="text-sm text-slate-500 mb-4">{edu.location}</p>
+                <p className="text-base text-slate-500 mb-4">{edu.location}</p>
                 
                 <div className="bg-white p-6 rounded-lg border border-slate-100 shadow-sm">
                   <ul className="list-disc list-outside ml-4 space-y-2 text-slate-600 leading-relaxed">

@@ -1,26 +1,39 @@
 import { motion } from "framer-motion";
+import background from "@assets/generated_images/about_section_background.jpg";
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-slate-50 relative">
-      <div className="container mx-auto px-6">
+    <section id="about" className="py-24 bg-slate-50 relative overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={background} 
+          alt="About Background" 
+          className="w-full h-full object-cover opacity-10" 
+        />
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="max-w-4xl mx-auto text-center"
+          className="max-w-4xl mx-auto text-justify"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8">About Me</h2>
-          <div className="text-lg md:text-xl text-slate-600 leading-relaxed space-y-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-8">About Me</h2>
+          <div className="text-xl md:text-2xl text-slate-600 leading-relaxed space-y-6">
             <p>
-              I'm a CRM & ERP specialist with proven expertise in <span className="font-semibold text-primary">Microsoft Dynamics 365</span> implementation and consulting. I've successfully led digital transformations across Customer Service, Field Service, and Business Central modules, helping organizations streamline operations and boost customer engagement.
+              I am a <span className="text-green-600 font-semibold">CRM & ERP specialist </span><span className="font-semibold text-primary">with 3+ years of experience</span> who loves turning messy processes into smooth, scalable systems. I have worked across <span className="font-semibold text-primary">Microsoft Dynamics 365, Business Central, Customer Service, and Field Service, </span> helping teams fix what’s broken, automate what’s manual, and build experiences that customers actually enjoy.
             </p>
             <p>
-              My background includes hands-on experience with <span className="font-semibold text-sky-600">Salesforce Service Cloud</span> and Field Service Lightning, enabling me to architect solutions in multi-CRM environments. I'm passionate about bridging the gap between business needs and technical implementation.
+              My background also includes hands-on experience with <span className="font-semibold text-sky-600">Salesforce Service Cloud and Field Service Lightning,</span> which lets me navigate multi-CRM environments without the usual chaos.
             </p>
             <p>
-              <span className="text-green-600 font-semibold">I'm actively seeking a role</span> where I can leverage my consulting background, technical skills, and strategic vision to drive enterprise CRM/ERP projects. I'm open to opportunities in consulting, project management, solutions architecture, or client success leadership.
+              <span className="text-green-600 font-semibold">My strength is simple:</span> I understand what the business wants, I understand what the tech can do, and I know how to connect the two without overcomplicating things.
+            </p>
+            <p>
+              <span className="text-green-600 font-semibold">I am actively seeking a role</span> where I can leverage my consulting background, technical skills, and strategic vision to drive enterprise CRM/ERP projects. I'm open to opportunities in consulting, project management, solutions architecture, or client success leadership.
             </p>
           </div>
         </motion.div>

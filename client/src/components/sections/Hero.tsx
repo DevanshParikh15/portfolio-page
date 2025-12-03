@@ -3,7 +3,7 @@ import { ArrowRight, Download } from "lucide-react";
 import { motion } from "framer-motion";
 import { RESUME_LINK } from "@/config/resume";
 import headshot from "@assets/Screenshot_2024-11-18_at_11.17.33_AM_1764716108785.png";
-import background from "@assets/generated_images/abstract_corporate_blue_geometric_background.png";
+import background from "@assets/generated_images/crm_business_background.jpg";
 
 export default function Hero() {
   return (
@@ -13,7 +13,7 @@ export default function Hero() {
         <img 
           src={background} 
           alt="Abstract Background" 
-          className="w-full h-full object-cover opacity-10" 
+          className="w-full h-full object-cover opacity-15" 
         />
         <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/50 to-white pointer-events-none" />
       </div>
@@ -26,25 +26,28 @@ export default function Hero() {
           transition={{ duration: 0.6 }}
           className="flex flex-col gap-6 text-center lg:text-left"
         >
-          <div className="inline-block px-3 py-1 rounded-full bg-green-50 text-green-700 text-sm font-semibold tracking-wide w-fit mx-auto lg:mx-0 border border-green-200">
+          <div className="inline-block px-4 py-1.5 rounded-full bg-green-50 text-green-700 text-lg font-semibold tracking-wide w-fit mx-auto lg:mx-0 border border-green-200">
             🔍 Currently Open to Opportunities
           </div>
           
-          <h1 className="text-5xl lg:text-7xl font-bold text-slate-900 leading-tight tracking-tight">
-            Microsoft Dynamics 365 Consultant <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-600">Seeking New Role</span>
+          <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight tracking-tight">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-700 to-blue-500">Digital Transformation Consultant</span>
           </h1>
-          
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+
+          <h1 className="text-2xl lg:text-4xl font-bold text-slate-900 leading-tight tracking-tight">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-800 to-teal-500">Microsoft Dynamics 365 & Salesforce Ecosystems</span>
+          </h1>
+
+          <h1 className="text-xl lg:text-2xl font-bold text-slate-900 leading-tight tracking-tight">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-700 to-cyan-500">Seeking New Role across CRM, ERP, Consulting, and Digital Transformation....</span>
+          </h1>
+
+          {/* <p className="text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
             CRM/ERP specialist ready to drive digital transformation. Expertise in Dynamics 365, Salesforce, and end-to-end implementation strategy.
-          </p>
+          </p>*/}
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-4">
-            <a href={RESUME_LINK} target="_blank" rel="noreferrer">
-              <Button size="lg" className="rounded-full px-8 py-6 text-lg shadow-xl shadow-primary/20 bg-primary hover:bg-primary/90 transition-transform hover:scale-105">
-                Download Resume <Download className="ml-2 w-5 h-5" />
-              </Button>
-            </a>
-          </div>
+          
+           
         </motion.div>
 
         <motion.div 
@@ -75,8 +78,8 @@ export default function Hero() {
                 </svg>
               </div>
               <div>
-                <p className="text-xs text-slate-500 font-medium">Certified</p>
-                <p className="text-sm font-bold text-slate-900">Dynamics 365 Expert</p>
+                <p className="text-sm text-slate-500 font-bold">Skilled</p>
+                <p className="text-base font-bold text-slate-900">CRM & ERP Professional</p>
               </div>
             </div>
           </div>

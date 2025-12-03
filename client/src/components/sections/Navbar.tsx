@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, FileText } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export default function Navbar() {
@@ -17,9 +16,9 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "About", href: "#about" },
+    { name: "Experience", href: "#experience" },
     { name: "Certifications", href: "#certifications" },
     { name: "Skills", href: "#skills" },
-    { name: "Experience", href: "#experience" },
     { name: "Education", href: "#education" },
     { name: "Contact", href: "#contact" },
   ];
@@ -34,7 +33,7 @@ export default function Navbar() {
       )}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <a href="#" className="text-2xl font-bold tracking-tight text-slate-900 flex items-center gap-2">
+        <a href="#" className="text-3xl font-bold tracking-tight text-slate-900 flex items-center gap-2">
           Devansh Parikh
         </a>
 
@@ -44,14 +43,12 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-slate-600 hover:text-primary transition-colors"
+              className="text-lg font-semibold text-slate-600 hover:text-primary transition-all duration-200 hover:scale-110 relative group"
             >
               {link.name}
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
-          <Button className="gap-2 rounded-full px-6 bg-primary hover:bg-primary/90 text-white shadow-md hover:shadow-lg transition-all">
-            <FileText className="w-4 h-4" /> Resume
-          </Button>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -71,15 +68,12 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-base font-medium text-slate-700 hover:text-primary py-2"
+                className="text-xl font-semibold text-slate-700 hover:text-primary py-3 px-2 rounded-lg hover:bg-slate-50 transition-all duration-200"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
               </a>
             ))}
-            <Button className="w-full gap-2">
-              <FileText className="w-4 h-4" /> Download Resume
-            </Button>
           </div>
         </div>
       )}

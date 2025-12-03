@@ -28,7 +28,7 @@
   --radius-md: calc(var(--radius));
   --radius-lg: calc(var(--radius) + 2px);
 
-  --font-sans: "Segoe UI", "Inter", system-ui, sans-serif;
+  --font-sans: "Times New Roman", Times, serif;
 }
 
 :root {

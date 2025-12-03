@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { BadgeCheck, Award } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import background from "@assets/generated_images/certifications.jpg";
 
 const certifications = [
   { title: "Microsoft Certified: Business Central Functional Consultant", issuer: "Microsoft" },
@@ -14,10 +15,19 @@ const certifications = [
 
 export default function Certifications() {
   return (
-    <section id="certifications" className="py-24 bg-white">
-      <div className="container mx-auto px-6">
+    <section id="certifications" className="py-24 bg-white relative overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={background} 
+          alt="Certifications Background" 
+          className="w-full h-full object-cover opacity-10" 
+        />
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Certifications</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Certifications</h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
             Validated expertise across leading enterprise platforms.
           </p>
@@ -38,8 +48,8 @@ export default function Certifications() {
                     {cert.issuer === "Microsoft" ? <BadgeCheck className="w-6 h-6" /> : <Award className="w-6 h-6" />}
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-900 mb-1 text-sm md:text-base">{cert.title}</h3>
-                    <p className="text-xs text-slate-500 uppercase tracking-wider font-medium">{cert.issuer}</p>
+                    <h3 className="font-semibold text-slate-900 mb-1 text-base md:text-lg">{cert.title}</h3>
+                    <p className="text-sm text-slate-500 uppercase tracking-wider font-medium">{cert.issuer}</p>
                   </div>
                 </CardContent>
               </Card>

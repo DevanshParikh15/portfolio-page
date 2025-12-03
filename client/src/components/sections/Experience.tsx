@@ -1,29 +1,30 @@
 import { motion } from "framer-motion";
 import { Briefcase } from "lucide-react";
+import background from "@assets/generated_images/experience_section_background.jpg";
 
 const experiences = [
   {
     company: "BreezeLearn Technologies",
     role: "Market Research Analyst",
-    period: "2025",
+    period: "January 2025 - April 2025",
     description: "Researched CRM & business applications for improving SDR operations. Identified use cases for lead generation, targeting, and client acquisition."
   },
   {
     company: "Vosyn",
     role: "AI Product Owner & Business Analyst",
-    period: "2024–2025",
+    period: "November 2024 - April 2025",
     description: "Guided founders on integrating their AI tech into business applications. Led product development from concept to beta. Prioritized user stories, managed backlog, and aligned functional requirements."
   },
   {
     company: "Infosys",
     role: "System Engineer",
-    period: "2022–2024",
+    period: "June 2022 - June 2024",
     description: "Helped major energy clients adopt D365 Field Service & Customer Service. Implemented Salesforce Service Cloud & Field Service Lightning. Improved user adoption and streamlined global workflows."
   },
   {
     company: "Microsoft",
     role: "Future Ready Talent Intern",
-    period: "2021–2022",
+    period: "October 2021 – March 2022",
     description: "Explored cloud technologies and applied Microsoft tools to solve business challenges. Gained exposure to Azure fundamentals, Power Platform basics, and enterprise digital transformation scenarios."
   },
   {
@@ -54,10 +55,19 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-24 bg-white overflow-hidden">
-      <div className="container mx-auto px-6">
+    <section id="experience" className="py-24 bg-white overflow-hidden relative min-h-screen">
+      {/* Background */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={background} 
+          alt="Experience Background" 
+          className="w-full h-full object-fill opacity-10" 
+        />
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Professional Timeline</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Professional Timeline</h2>
         </div>
 
         <div className="max-w-3xl mx-auto relative">
@@ -80,12 +90,12 @@ export default function Experience() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row sm:items-baseline justify-between mb-2">
-                  <h3 className="text-xl font-bold text-slate-900">{exp.company}</h3>
-                  <span className="text-sm font-semibold text-primary bg-blue-50 px-3 py-1 rounded-full border border-blue-100 w-fit mt-2 sm:mt-0">
+                  <h3 className="text-2xl font-bold text-slate-900">{exp.company}</h3>
+                  <span className="text-base font-semibold text-primary bg-blue-50 px-3 py-1 rounded-full border border-blue-100 w-fit mt-2 sm:mt-0">
                     {exp.period}
                   </span>
                 </div>
-                <h4 className="text-lg text-slate-700 font-medium mb-3 flex items-center gap-2">
+                <h4 className="text-xl text-slate-700 font-medium mb-3 flex items-center gap-2">
                   <Briefcase className="w-4 h-4 text-slate-400" />
                   {exp.role}
                 </h4>
