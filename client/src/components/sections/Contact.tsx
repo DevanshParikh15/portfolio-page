@@ -15,9 +15,9 @@ export default function Contact() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">Let's connect.</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">Let's Talk.</h2>
             <p className="text-lg text-slate-300 mb-8 leading-relaxed max-w-md">
-              Interested in discussing Dynamics 365 opportunities, CRM strategies, or just want to say hello? I'd love to hear from you.
+              Interested in discussing opportunities? Let's connect about CRM/ERP roles, consulting engagements, or collaborative projects. I'm actively reviewing opportunities now.
             </p>
             
             <div className="flex flex-col gap-4">

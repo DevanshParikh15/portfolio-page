@@ -25,16 +25,16 @@ export default function Hero() {
           transition={{ duration: 0.6 }}
           className="flex flex-col gap-6 text-center lg:text-left"
         >
-          <div className="inline-block px-3 py-1 rounded-full bg-blue-50 text-primary text-sm font-semibold tracking-wide w-fit mx-auto lg:mx-0 border border-blue-100">
-            Microsoft Dynamics 365 Specialist
+          <div className="inline-block px-3 py-1 rounded-full bg-green-50 text-green-700 text-sm font-semibold tracking-wide w-fit mx-auto lg:mx-0 border border-green-200">
+            🔍 Currently Open to Opportunities
           </div>
           
           <h1 className="text-5xl lg:text-7xl font-bold text-slate-900 leading-tight tracking-tight">
-            Transforming Business with <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-600">Intelligent CRM and ERP systems</span>
+            Microsoft Dynamics 365 Consultant <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-600">Seeking New Role</span>
           </h1>
           
           <p className="text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
-            Helping businesses adopt modern CRM & ERP systems through Microsoft Dynamics 365 and Salesforce.
+            CRM/ERP specialist ready to drive digital transformation. Expertise in Dynamics 365, Salesforce, and end-to-end implementation strategy.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-4">
