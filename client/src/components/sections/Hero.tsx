@@ -3,20 +3,19 @@ import { ArrowRight, Download } from "lucide-react";
 import { motion } from "framer-motion";
 import { RESUME_LINK } from "@/config/resume";
 import headshot from "@assets/Screenshot_2024-11-18_at_11.17.33_AM_1764716108785.png";
-import background from "@assets/generated_images/crm_business_background.jpg";
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src={background} 
-          alt="Abstract Background" 
-          className="w-full h-full object-cover opacity-15" 
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/50 to-white pointer-events-none" />
+      {/* Background (logos only, no photographic backgrounds) */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <img src="/assets/microsoft.svg" alt="" className="section-bg-logo absolute top-8 left-8 w-36" data-default-opacity="0.25" style={{ filter: 'saturate(1.2) brightness(1.15)' }} />
+          <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/50 to-white pointer-events-none" />
       </div>
+        {/* Background (decorative gradients only) */}
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/50 to-white pointer-events-none" />
+        </div>
 
       <div className="container mx-auto px-6 z-10 grid lg:grid-cols-2 gap-12 items-center">
         
@@ -30,16 +29,43 @@ export default function Hero() {
             🔍 Currently Open to Opportunities
           </div>
           
-          <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight tracking-tight">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-700 to-blue-500">Digital Transformation Consultant</span>
+          <h1 className="text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
+            <span
+              style={{
+                background: 'linear-gradient(90deg, var(--ms-blue), var(--ms-sky))',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent'
+              }}
+              className="bg-clip-text"
+            >
+              Digital Transformation Consultant
+            </span>
           </h1>
 
-          <h1 className="text-2xl lg:text-4xl font-bold text-slate-900 leading-tight tracking-tight">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-800 to-teal-500">Microsoft Dynamics 365 & Salesforce Ecosystems</span>
+          <h1 className="text-2xl lg:text-4xl font-bold leading-tight tracking-tight">
+            <span
+              style={{
+                background: 'linear-gradient(90deg, var(--ms-sky), var(--ms-yellow))',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent'
+              }}
+              className="bg-clip-text"
+            >
+              Microsoft Dynamics 365 & Power Platform Ecosystem
+            </span>
           </h1>
 
-          <h1 className="text-xl lg:text-2xl font-bold text-slate-900 leading-tight tracking-tight">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-700 to-cyan-500">Seeking New Role across CRM, ERP, Consulting, and Digital Transformation....</span>
+          <h1 className="text-xl lg:text-2xl font-bold leading-tight tracking-tight">
+            <span
+              style={{
+                background: 'linear-gradient(90deg, var(--ms-green), var(--ms-blue))',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent'
+              }}
+              className="bg-clip-text"
+            >
+              Seeking New Role across CRM, ERP, Consulting, and Digital Transformation...
+            </span>
           </h1>
 
           {/* <p className="text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
@@ -78,7 +104,7 @@ export default function Hero() {
                 </svg>
               </div>
               <div>
-                <p className="text-sm text-slate-500 font-bold">Skilled</p>
+                <p className="text-sm text-slate-500 font-bold">Skilled Microsoft</p>
                 <p className="text-base font-bold text-slate-900">CRM & ERP Professional</p>
               </div>
             </div>

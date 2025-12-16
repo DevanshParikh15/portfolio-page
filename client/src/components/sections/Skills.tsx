@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import background from "@assets/generated_images/skills_section_background.jpg";
 
 const skillCategories = [
   {
@@ -8,13 +7,13 @@ const skillCategories = [
     color: "bg-blue-50 text-blue-700 border-blue-100"
   },
   {
-    title: "Salesforce",
-    skills: ["Administration", "Service Cloud", "Field Service Lightning"],
-    color: "bg-sky-50 text-sky-700 border-sky-100"
+    title: "Microsoft Integrations",
+    skills: ["Power Platform", "Dataverse", "Azure Integrations"],
+    color: "bg-cyan-50 text-cyan-700 border-cyan-100"
   },
   {
     title: "Business Roles",
-    skills: ["Product Owner", "Business Analyst"],
+    skills: ["Functional Consultant", "Product Owner", "Business Analyst"],
     color: "bg-violet-50 text-violet-700 border-violet-100"
   },
   {
@@ -32,20 +31,16 @@ const skillCategories = [
 export default function Skills() {
   return (
     <section id="skills" className="py-24 bg-slate-50 relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src={background} 
-          alt="Skills Background" 
-          className="w-full h-full object-cover opacity-10" 
-        />
+      {/* Background (decorative gradients only) */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/50 to-white pointer-events-none" />
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Skills & Expertise</h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
-            A comprehensive toolkit for delivering enterprise-grade solutions.
+            {/*A comprehensive toolkit for delivering enterprise-grade solutions.*/}
           </p>
         </div>
 

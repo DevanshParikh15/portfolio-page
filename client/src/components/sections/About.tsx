@@ -1,16 +1,11 @@
 import { motion } from "framer-motion";
-import background from "@assets/generated_images/about_section_background.jpg";
 
 export default function About() {
   return (
     <section id="about" className="py-24 bg-slate-50 relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src={background} 
-          alt="About Background" 
-          className="w-full h-full object-cover opacity-10" 
-        />
+      {/* Background (decorative gradients only) */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/50 to-white pointer-events-none" />
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
@@ -27,7 +22,7 @@ export default function About() {
               I am a <span className="text-green-600 font-semibold">CRM & ERP specialist </span><span className="font-semibold text-primary">with 3+ years of experience</span> who loves turning messy processes into smooth, scalable systems. I have worked across <span className="font-semibold text-primary">Microsoft Dynamics 365, Business Central, Customer Service, and Field Service, </span> helping teams fix what’s broken, automate what’s manual, and build experiences that customers actually enjoy.
             </p>
             <p>
-              My background also includes hands-on experience with <span className="font-semibold text-sky-600">Salesforce Service Cloud and Field Service Lightning,</span> which lets me navigate multi-CRM environments without the usual chaos.
+              My background focuses on Microsoft Dynamics 365 and related technologies, with experience integrating enterprise workflows and Power Platform tools to deliver measurable outcomes.
             </p>
             <p>
               <span className="text-green-600 font-semibold">My strength is simple:</span> I understand what the business wants, I understand what the tech can do, and I know how to connect the two without overcomplicating things.

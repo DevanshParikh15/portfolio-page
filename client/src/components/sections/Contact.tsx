@@ -1,22 +1,16 @@
 import { motion } from "framer-motion";
 import { Linkedin, Mail, Github, MapPin } from "lucide-react";
-import background from "@assets/generated_images/contact_section_background.jpg";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 bg-slate-900 text-white relative overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src={background} 
-          alt="Contact Background" 
-          className="w-full h-full object-cover opacity-3" 
-        />
+    <section id="contact" className="py-24 bg-slate-50 text-slate-900 relative overflow-hidden">
+      {/* Background (decorative gradients only) */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/50 to-white pointer-events-none" />
       </div>
       
       {/* Background Decoration */}
-      <div className="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl z-0" />
-      <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl z-0" />
+      
 
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
@@ -28,7 +22,7 @@ export default function Contact() {
         >
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-6xl font-bold mb-6">Let's Talk.</h2>
-            <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto">
               Interested in discussing opportunities? Let's connect about CRM/ERP roles, consulting engagements, or collaborative projects.
             </p>
           </div>
@@ -55,7 +49,7 @@ export default function Contact() {
                 <Mail className="w-6 h-6" />
               </div>
               <p className="text-base text-slate-600 group-hover:text-slate-300 mb-1">Email</p>
-              <p className="font-semibold text-center text-base text-slate-900 group-hover:text-white transition-colors">devanshparikh15@gmail.com</p>
+              <p className="font-semibold text-center text-base text-slate-900 group-hover:text-white transition-colors">devanshparikh15@gmail .com</p>
             </a>
             
             <a 
@@ -81,8 +75,8 @@ export default function Contact() {
           </div>
         </motion.div>
 
-        <footer className="mt-24 pt-8 border-t border-white/10 text-center text-slate-500 text-base">
-          <p>© {new Date().getFullYear()} Devansh Parikh. All rights reserved.</p>
+        <footer className="mt-24 pt-8 border-t border-slate-200 text-center text-slate-500 text-base">
+          {/* Copyright removed per design preference */}
         </footer>
       </div>
     </section>

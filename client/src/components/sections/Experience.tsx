@@ -1,25 +1,24 @@
 import { motion } from "framer-motion";
 import { Briefcase } from "lucide-react";
-import background from "@assets/generated_images/experience_section_background.jpg";
 
 const experiences = [
   {
     company: "BreezeLearn Technologies",
     role: "Market Research Analyst",
     period: "January 2025 - April 2025",
-    description: "Researched CRM & business applications for improving SDR operations. Identified use cases for lead generation, targeting, and client acquisition."
+    description: "Studied CRM tools and markets to support sales and lead generation work. Spoke with professionals to understand how sales teams use CRM systems. Reviewed industry reports to find trends and opportunities. Shared simple and clear insights with leadership for decision-making."
   },
   {
     company: "Vosyn",
     role: "AI Product Owner & Business Analyst",
     period: "November 2024 - April 2025",
-    description: "Guided founders on integrating their AI tech into business applications. Led product development from concept to beta. Prioritized user stories, managed backlog, and aligned functional requirements."
+    description: "Worked on research to see how the Voysn Core product could connect with Microsoft Dynamics 365. Wrote user stories and managed the backlog to help the team build the right features. Worked closely with developers and testers during each sprint. Shared clear product ideas and progress with company founders."
   },
   {
     company: "Infosys",
     role: "System Engineer",
     period: "June 2022 - June 2024",
-    description: "Helped major energy clients adopt D365 Field Service & Customer Service. Implemented Salesforce Service Cloud & Field Service Lightning. Improved user adoption and streamlined global workflows."
+    description: "Helped an energy client use Microsoft Dynamics 365 to improve service operations. Built workflows and automations to reduce manual work. Supported testing and trained users to improve system adoption. Used Power BI and data checks to improve report accuracy."
   },
   {
     company: "Microsoft",
@@ -56,13 +55,9 @@ const experiences = [
 export default function Experience() {
   return (
     <section id="experience" className="py-24 bg-white overflow-hidden relative min-h-screen">
-      {/* Background */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src={background} 
-          alt="Experience Background" 
-          className="w-full h-full object-fill opacity-10" 
-        />
+      {/* Background (logos only) */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/50 to-white pointer-events-none" />
       </div>
       
       <div className="container mx-auto px-6 relative z-10">

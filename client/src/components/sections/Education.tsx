@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { GraduationCap } from "lucide-react";
-import background from "@assets/generated_images/education.jpg";
 
 const education = [
   {
@@ -28,13 +27,9 @@ const education = [
 export default function Education() {
   return (
     <section id="education" className="py-24 bg-slate-50 overflow-hidden relative">
-      {/* Background */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src={background} 
-          alt="Education Background" 
-          className="w-full h-full object-cover opacity-10" 
-        />
+      {/* Background (decorative gradients only) */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/50 to-white pointer-events-none" />
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
