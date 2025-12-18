@@ -4,10 +4,9 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const certifications = [
   { title: "Microsoft Certified: Business Central Functional Consultant", issuer: "Microsoft" },
-  { title: "Microsoft Certified: Business Central Developer", issuer: "Microsoft" },
   { title: "Microsoft Certified: Customer Service Functional Consultant", issuer: "Microsoft" },
   { title: "Microsoft Certified: Field Service Functional Consultant", issuer: "Microsoft" },
-  { title: "Microsoft Certified: Power Platform App Maker", issuer: "Microsoft" },
+  { title: "Microsoft Certified: Power Platform Functional Consultant", issuer: "Microsoft" },
   { title: "SAFe Certified Product Manager", issuer: "Scaled Agile" },
 ];
 
