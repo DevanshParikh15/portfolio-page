@@ -19,16 +19,16 @@ export default function About() {
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-8">About Me</h2>
           <div className="text-xl md:text-2xl text-slate-600 leading-relaxed space-y-6">
             <p>
-              I am a <span className="text-green-600 font-semibold">CRM & ERP specialist </span><span className="font-semibold text-primary">with 3+ years of experience</span> who loves turning messy processes into smooth, scalable systems. I have worked across <span className="font-semibold text-primary">Microsoft Dynamics 365, Business Central, Customer Service, and Field Service, </span> helping teams fix what’s broken, automate what’s manual, and build experiences that customers actually enjoy.
+              I am a CRM and ERP specialist with 3+ years of experience turning messy business processes into clear, scalable systems. I have worked across Microsoft Dynamics 365, Business Central, Power Platform, and Salesforce, helping teams fix broken workflows, automate manual work, and deliver systems that people actually want to use.
             </p>
             <p>
-              My background focuses on Microsoft Dynamics 365 and related technologies, with experience integrating enterprise workflows and Power Platform tools to deliver measurable outcomes.
+              My background spans both Microsoft and Salesforce ecosystems, where I have supported enterprise CRM and ERP implementations, system integrations, reporting, and process optimization. I am comfortable working with business stakeholders and technical teams to ensure solutions are practical, scalable, and aligned with real business needs.
             </p>
             <p>
-              <span className="text-green-600 font-semibold">My strength is simple:</span> I understand what the business wants, I understand what the tech can do, and I know how to connect the two without overcomplicating things.
+              My core strength is simple: I understand what the business is asking for, I understand what the technology can realistically deliver, and I know how to connect the two without unnecessary complexity.
             </p>
             <p>
-              <span className="text-green-600 font-semibold">I am actively seeking a role</span> where I can leverage my consulting background, technical skills, and strategic vision to drive enterprise CRM/ERP projects. I'm open to opportunities in consulting, project management, solutions architecture, or client success leadership.
+              I am actively seeking opportunities where I can apply my consulting mindset, hands-on CRM expertise, and strategic thinking to deliver high-impact CRM and ERP initiatives. I am open to roles in consulting, project or product management, solution architecture, or client-facing leadership across Microsoft and Salesforce environments.
             </p>
           </div>
         </motion.div>
