@@ -2,12 +2,29 @@ import { motion } from "framer-motion";
 import { BadgeCheck, Award } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
-const certifications = [
-  { title: "Microsoft Certified: Business Central Functional Consultant", issuer: "Microsoft" },
-  { title: "Microsoft Certified: Customer Service Functional Consultant", issuer: "Microsoft" },
-  { title: "Microsoft Certified: Field Service Functional Consultant", issuer: "Microsoft" },
-  { title: "Microsoft Certified: Power Platform Functional Consultant", issuer: "Microsoft" },
-  { title: "SAFe Certified Product Manager", issuer: "Scaled Agile" },
+const categories = [
+  {
+    name: "Salesforce Certifications",
+    items: [
+      { title: "Salesforce Certified Admin", issuer: "Salesforce" },
+      { title: "Salesforce Certified Agentforce Specialist", issuer: "Salesforce" },
+      { title: "Salesforce Certified Service Cloud Consultant", issuer: "Salesforce" },
+      { title: "Salesforce Certified Field Service (FSL)", issuer: "Salesforce" },
+    ],
+  },
+  {
+    name: "Microsoft Certifications",
+    items: [
+      { title: "Microsoft Certified: Business Central Functional Consultant", issuer: "Microsoft" },
+      { title: "Microsoft Certified: Business Central Developer", issuer: "Microsoft" },
+    ],
+  },
+  {
+    name: "Functional / Other",
+    items: [
+      { title: "SAFe Certified Product Manager", issuer: "Scaled Agile" },
+    ],
+  },
 ];
 
 export default function Certifications() {
@@ -26,27 +43,35 @@ export default function Certifications() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {certifications.map((cert, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
-            >
-              <Card className="h-full cursor-pointer group border-slate-200 hover:border-primary/30 transition-all hover:shadow-lg hover:-translate-y-1">
-                <CardContent className="p-6 flex flex-col items-center text-center gap-4 h-full justify-center">
-                  <div className="w-12 h-12 rounded-full bg-blue-50 text-primary flex items-center justify-center group-hover:scale-110 transition-transform">
-                    {cert.issuer === "Microsoft" ? <BadgeCheck className="w-6 h-6" /> : <Award className="w-6 h-6" />}
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-slate-900 mb-1 text-base md:text-lg">{cert.title}</h3>
-                    <p className="text-sm text-slate-500 uppercase tracking-wider font-medium">{cert.issuer}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
+        <div className="space-y-10">
+          {categories.map((cat, catIdx) => (
+            <div key={catIdx}>
+              <h3 className="text-2xl font-semibold text-slate-900 mb-4">{cat.name}</h3>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                {cat.items.map((cert, idx) => (
+                  <motion.div
+                    key={idx}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: idx * 0.08 }}
+                  >
+                    <Card className="h-full cursor-pointer group border-slate-200 hover:border-primary/30 transition-all hover:shadow-lg hover:-translate-y-1">
+                      <CardContent className="p-6 flex flex-col items-center text-center gap-4 h-full justify-center">
+                        <div className="w-12 h-12 rounded-full bg-blue-50 text-primary flex items-center justify-center group-hover:scale-110 transition-transform">
+                          {cert.issuer === "Microsoft" ? <BadgeCheck className="w-6 h-6" /> : <Award className="w-6 h-6" />}
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-slate-900 mb-1 text-base md:text-lg">{cert.title}</h4>
+                          <p className="text-sm text-slate-500 uppercase tracking-wider font-medium">{cert.issuer}</p>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>
