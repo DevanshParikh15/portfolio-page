@@ -2,30 +2,34 @@ import { motion } from "framer-motion";
 
 const skillCategories = [
   {
-    title: "Dynamics 365",
-    skills: ["Business Central", "Customer Service", "Field Service"],
-    color: "bg-blue-50 text-blue-700 border-blue-100"
+    title: "CRM & ERP Platforms",
+    skills: [
+      "Salesforce — Admin",
+      "Salesforce — Service Cloud",
+      "Salesforce — Field Service Lightning (FSL)",
+      "Microsoft Dynamics 365 & Business Central",
+    ],
+    color: "bg-blue-50 text-blue-700 border-blue-100",
   },
   {
-    title: "Microsoft Integrations",
-    skills: ["Power Platform", "Dataverse", "Azure Integrations"],
-    color: "bg-cyan-50 text-cyan-700 border-cyan-100"
+    title: "Platform Capabilities",
+    skills: [
+      "Service Operations, Case Management & Field Service",
+      "Business Central Functional Configuration & Development",
+      "Workflow Automation, Reporting & Data Modeling",
+    ],
+    color: "bg-cyan-50 text-cyan-700 border-cyan-100",
   },
   {
-    title: "Business Roles",
-    skills: ["Functional Consultant", "Product Owner", "Business Analyst"],
-    color: "bg-violet-50 text-violet-700 border-violet-100"
+    title: "Tools",
+    skills: ["Power Apps", "Power Automate", "Power BI", "Dataverse", "Azure", "Salesforce Platform"],
+    color: "bg-slate-50 text-slate-700 border-slate-200",
   },
   {
-    title: "Power Platform Tools",
-    skills: ["Power Apps", "Power Automate", "Power BI", "Dataverse", "Power Pages", "Power Virtual Agents", "AI Builder", "Connectors (Standard & Premium)", "Solution Management"],
-    color: "bg-slate-50 text-slate-700 border-slate-200"
+    title: "Consulting & Functional Skills",
+    skills: ["Functional Consultant | Product Owner | Business Analyst", "Requirements Gathering & Stakeholder Management"],
+    color: "bg-emerald-50 text-emerald-700 border-emerald-100",
   },
-  {
-    title: "Soft Skills",
-    skills: ["Requirements Gathering", "Stakeholder Management", "Agile Delivery"],
-    color: "bg-emerald-50 text-emerald-700 border-emerald-100"
-  }
 ];
 
 export default function Skills() {
