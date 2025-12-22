@@ -25,46 +25,45 @@ export default function Hero() {
           transition={{ duration: 0.6 }}
           className="flex flex-col gap-6 text-center lg:text-left"
         >
-          <div className="inline-block px-4 py-1.5 rounded-full bg-green-50 text-green-700 text-lg font-semibold tracking-wide w-fit mx-auto lg:mx-0 border border-green-200">
-            🔍 Currently Open to Opportunities
+          <div className="inline-block px-4 py-1.5 rounded-full bg-blue-50 text-blue-700 text-lg font-semibold tracking-wide w-fit mx-auto lg:mx-0 border border-blue-200">
+            🔍 Open to CRM / ERP Opportunities
           </div>
           
           <h1 className="text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
             <span
               style={{
-                background: 'linear-gradient(90deg, var(--ms-blue), var(--ms-sky))',
+                background: 'linear-gradient(90deg, color-mix(in srgb, var(--ms-blue) 60%, var(--sf-blue) 40%), color-mix(in srgb, var(--ms-sky) 60%, var(--sf-accent) 40%))',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent'
               }}
               className="bg-clip-text"
             >
-              Digital Transformation Consultant
+              CRM & ERP Specialist
             </span>
           </h1>
-
           <h1 className="text-2xl lg:text-4xl font-bold leading-tight tracking-tight">
             <span
               style={{
-                background: 'linear-gradient(90deg, var(--ms-sky), var(--ms-yellow))',
+                background: 'linear-gradient(90deg, color-mix(in srgb, var(--ms-sky) 60%, var(--sf-accent) 40%), color-mix(in srgb, var(--ms-yellow) 70%, var(--sf-blue) 30%))',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent'
               }}
               className="bg-clip-text"
             >
-              Microsoft Dynamics 365 & Power Platform Ecosystem
+              Salesforce CRM •Microsoft Dynamics 365 • Power Platform
             </span>
           </h1>
 
           <h1 className="text-xl lg:text-2xl font-bold leading-tight tracking-tight">
             <span
               style={{
-                background: 'linear-gradient(90deg, var(--ms-green), var(--ms-blue))',
+                background: 'linear-gradient(90deg, color-mix(in srgb, var(--ms-green) 60%, var(--sf-blue) 40%), color-mix(in srgb, var(--ms-blue) 60%, var(--sf-accent) 40%))',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent'
               }}
               className="bg-clip-text"
             >
-              Seeking New Role across CRM, ERP, Consulting, and Digital Transformation...
+              Driving end-to-end CRM & ERP transformations
             </span>
           </h1>
 
@@ -104,7 +103,7 @@ export default function Hero() {
                 </svg>
               </div>
               <div>
-                <p className="text-sm text-slate-500 font-bold">Skilled Microsoft</p>
+                <p className="text-sm text-slate-500 font-bold">Skilled</p>
                 <p className="text-base font-bold text-slate-900">CRM & ERP Professional</p>
               </div>
             </div>

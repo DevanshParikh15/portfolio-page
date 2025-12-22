@@ -18,7 +18,7 @@ const experiences = [
     company: "Infosys",
     role: "System Engineer",
     period: "June 2022 - June 2024",
-    description: "Helped an energy client use Microsoft Dynamics 365 to improve service operations. Built workflows and automations to reduce manual work. Supported testing and trained users to improve system adoption. Used Power BI and data checks to improve report accuracy."
+    description: "Helped an energy client use Salesforce to improve their field service operations. Built workflows and automations to reduce manual work. Supported testing and trained users to improve system adoption. Used Power BI and data checks to improve report accuracy."
   },
   {
     company: "Microsoft",

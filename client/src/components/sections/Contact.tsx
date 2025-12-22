@@ -42,14 +42,14 @@ export default function Contact() {
             </a>
             
             <a 
-              href="mailto:devanshparikh15@gmail.com"
+              href="mailto:devansh.mp15@gmail.com"
               className="flex flex-col items-center p-6 rounded-xl bg-white hover:bg-slate-900 border border-slate-200 transition-all group"
             >
               <div className="w-12 h-12 rounded-full bg-orange-500 flex items-center justify-center text-white mb-3">
                 <Mail className="w-6 h-6" />
               </div>
               <p className="text-base text-slate-600 group-hover:text-slate-300 mb-1">Email</p>
-              <p className="font-semibold text-center text-base text-slate-900 group-hover:text-white transition-colors">devanshparikh15@gmail .com</p>
+              <p className="font-semibold text-center text-base text-slate-900 group-hover:text-white transition-colors">devansh.mp15@gmail.com</p>
             </a>
             
             <a 

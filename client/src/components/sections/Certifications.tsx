@@ -9,7 +9,7 @@ const categories = [
       { title: "Salesforce Certified Admin", issuer: "Salesforce" },
       { title: "Salesforce Certified Agentforce Specialist", issuer: "Salesforce" },
       { title: "Salesforce Certified Service Cloud Consultant", issuer: "Salesforce" },
-      { title: "Salesforce Certified Field Service (FSL)", issuer: "Salesforce" },
+      { title: "Salesforce Certified Platform Developer", issuer: "Salesforce" },
     ],
   },
   {

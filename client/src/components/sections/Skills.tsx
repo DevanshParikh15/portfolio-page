@@ -22,7 +22,7 @@ const skillCategories = [
   },
   {
     title: "Tools",
-    skills: ["Power Apps", "Power Automate", "Power BI", "Dataverse", "Azure", "Salesforce Platform"],
+    skills: ["Power Apps", "Power Automate", "Power BI", "Salesforce Platform", "Salesforce Data Loader"],
     color: "bg-slate-50 text-slate-700 border-slate-200",
   },
   {
