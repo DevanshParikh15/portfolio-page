@@ -14,17 +14,14 @@
 
   /* Microsoft hex tokens */
   --ms-blue: #0078D4;
+  /* Salesforce tokens */
+  --sf-blue: #1798c1;
+  --sf-accent: #00A1E0;
   --ms-red: #f25022;
   --ms-green: #7fba00;
   --ms-sky: #00a4ef;
   --ms-yellow: #ffb900;
   --ms-white: #ffffff;
-
-  /* Salesforce brand tokens */
-  --sf-blue: #00A1E0; /* Salesforce primary blue */
-  --sf-dark: #1376B8;
-  --sf-light: #EAF8FF;
-  --sf-accent: #00A1E0;
 
   /* UI tokens */
   --card: 0 0% 100%;
@@ -52,34 +49,34 @@
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
     position: relative;
-    /* blended decorative gradients using Microsoft + Salesforce colors */
-    background-image: radial-gradient(600px 400px at 8% 12%, rgba(0,120,212,0.04), transparent 25%),
-                      radial-gradient(500px 300px at 92% 88%, rgba(0,161,224,0.035), transparent 25%),
-                      radial-gradient(420px 300px at 50% 10%, rgba(127,186,0,0.02), transparent 30%);
+    /* Subtle blended Microsoft + Salesforce decorative blobs */
+    background-image: radial-gradient(600px 420px at 10% 14%, rgba(0,164,239,0.06), transparent 24%),
+                      radial-gradient(520px 340px at 88% 86%, rgba(23,152,193,0.05), transparent 24%),
+                      radial-gradient(420px 300px at 50% 10%, rgba(0,120,212,0.03), transparent 30%);
     background-attachment: fixed;
   }
 
   /* Global fixed Microsoft logo (DOM element in index.html). Non-interactive and subtle. */
   .global-logos { position: fixed; inset: 0; pointer-events: none; z-index: 50; }
   .global-logos .global-logo { position: fixed; pointer-events: none; display: block; background: transparent; }
-  .global-logos .global-logo.ms { left: 24px; top: 18px; width: 140px; height: 140px; opacity: 0.32; filter: saturate(1.12) brightness(1.05); }
+  .global-logos .global-logo.ms { left: 24px; top: 18px; width: 120px; height: 120px; opacity: 0.34; filter: saturate(1.08) brightness(1.06); }
+  /* Optional: if a Salesforce logo is added later, use .global-logo.sf with similar styling */
+  .global-logos .global-logo.sf { right: 24px; top: 18px; width: 120px; height: 120px; opacity: 0.28; filter: saturate(1.05) brightness(1.06); transform: scale(0.98); }
 
   h1, h2, h3, h4, h5, h6 { @apply tracking-tight font-semibold; }
 }
 
-/* Heading color mapping using Microsoft palette */
-/* Headings use a subtle blend of Microsoft and Salesforce blue for a hybrid brand feel */
+/* Blend headings between Microsoft and Salesforce hues */
 h1 { color: color-mix(in srgb, var(--ms-blue) 60%, var(--sf-blue) 40%) !important; }
-h2 { color: color-mix(in srgb, var(--ms-red) 70%, var(--sf-blue) 30%) !important; }
-h3 { color: color-mix(in srgb, var(--ms-green) 60%, var(--sf-blue) 40%) !important; }
-h4, h5, h6 { color: color-mix(in srgb, var(--ms-sky) 60%, var(--sf-blue) 40%) !important; }
+h2 { color: color-mix(in srgb, var(--ms-sky) 55%, var(--sf-accent) 45%) !important; }
+h3 { color: color-mix(in srgb, var(--ms-green) 70%, var(--sf-blue) 30%) !important; }
+h4, h5, h6 { color: color-mix(in srgb, var(--ms-red) 60%, var(--sf-blue) 40%) !important; }
 
 /* Links and accents */
-a, a:visited { color: var(--ms-sky); }
-a:hover, a:focus { color: color-mix(in srgb, var(--ms-sky) 80%, white 20%); }
 
-/* Links can alternatively show Salesforce blue on hover to emphasize the blended theme */
-a.primary-sf:hover, a.primary-sf:focus { color: var(--sf-blue); }
+/* Accent links may show Salesforce blue on hover to emphasize the blend */
+a, a:visited { color: var(--ms-sky); }
+a:hover, a:focus { color: color-mix(in srgb, var(--ms-sky) 60%, var(--sf-accent) 40%); }
 
 /* Utility badges */
 .ms-badge { background-color: color-mix(in srgb, var(--ms-sky) 8%, white 92%); color: var(--ms-sky); }
