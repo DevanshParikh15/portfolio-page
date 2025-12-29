@@ -6,7 +6,7 @@ const categories = [
   {
     name: "Salesforce Certifications",
     items: [
-      { title: "Salesforce Certified Admin", issuer: "Salesforce" },
+      { title: "Salesforce Certified Administrator", issuer: "Salesforce" },
       { title: "Salesforce Certified Agentforce Specialist", issuer: "Salesforce" },
       { title: "Salesforce Certified Service Cloud Consultant", issuer: "Salesforce" },
       { title: "Salesforce Certified Platform Developer", issuer: "Salesforce" },
@@ -16,13 +16,14 @@ const categories = [
     name: "Microsoft Certifications",
     items: [
       { title: "Microsoft Certified: Business Central Functional Consultant", issuer: "Microsoft" },
-      { title: "Microsoft Certified: Business Central Developer", issuer: "Microsoft" },
+      {/*{ title: "Microsoft Certified: Business Central Developer", issuer: "Microsoft" },*/}
     ],
   },
   {
     name: "Functional / Other",
     items: [
       { title: "SAFe Certified Product Manager", issuer: "Scaled Agile" },
+      { title: "Entry Certificate in Business Analysis™ (ECBA™)", issuer: "IIBA" },
     ],
   },
 ];
